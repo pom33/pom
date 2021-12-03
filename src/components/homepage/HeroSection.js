@@ -1,15 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Button, Container, Text, Div, Icon, Input, Anchor } from "atomize"
+import { Button, Row, Col, Container, Text, Div, Icon, Input, Anchor } from "atomize"
 
 import boy from "../../images/avatar/boy.png"
-import cardImg from "../../images/hero-illustration/card-img.png"
+import anxietyImage from "../../images/hero-illustration/anxiety.png"
+import angerImage from "../../images/hero-illustration/anger.png"
+import depressionImage from "../../images/hero-illustration/depression.png"
+import stressImage from "../../images/hero-illustration/stress.png"
+import insecurityImage from "../../images/hero-illustration/insecurity.png"
 import FollowCard from "./uicomponents/FollowCard"
 import UserEdit from "./uicomponents/UserEdit"
 import Buttons from "./uicomponents/Buttons"
 import CardComponent from "./uicomponents/CardComponent"
 import LoginForm from "./uicomponents/LoginForm"
+import intro3 from "../../images/anxiety/gamee.png"
+
 // import Notification from './uicomponents/Notification'
 class HeroSection extends React.Component {
   render() {
@@ -99,35 +105,45 @@ class HeroSection extends React.Component {
             <Div
               d="flex"
               justify="center"
-              p={{ b: "10.5rem" }}
-              border={{ b: "1px solid" }}
-              borderColor="gray300"
+            >
+                <Div
+                  minW={{ xs: "auto", md: "44rem", sm: "auto", lg: "59rem" }}
+                  d="flex"
+                  align="center"
+                  
+                  flexDir="row"
+                  h={{ xs: "auto", md: "21rem",sm: "auto", lg: "20rem" }}
+                  pos="relative"
+                >
+                  <Link to="/docs/react/anxiety/anxiety_techniques">
+                    <CardComponent key="anxiety" cardImg={anxietyImage} title="Anxiety"/>
+                  </Link>
+
+                  <CardComponent key="anger" cardImg={angerImage} title="Anger" />
+
+                  <CardComponent key="depression" cardImg={depressionImage} title="Depression"/>
+                </Div>
+            
+             
+            </Div>
+          </Container>
+          <Container>
+            <Div
+              d="flex"
+              justify="center"
             >
               <Div
-                minW={{ xs: "100%", md: "44rem", lg: "59rem" }}
+                minW={{ xs: "auto", md: "44rem", sm: "auto",lg: "5rem" }}
                 d="flex"
-                align="center"
-                flexDir="column"
-                h={{ xs: "auto", md: "21rem", lg: "20rem" }}
+                align="right"
+                flexDir="row"
+                h={{ xs: "auto", md: "21rem",sm: "auto", lg: "20rem" }}
                 pos="relative"
               >
-                {/* Button Components */}
-                <Buttons />
+                <CardComponent key="stress" cardImg={stressImage} title="Stress" />
 
-                {/* Follow Component */}
-                <FollowCard />
+                <CardComponent key="insecurity" cardImg={insecurityImage} title="Insecurity"/>
 
-                {/* Card Component */}
-                <CardComponent />
-
-                {/* Notification Component */}
-                {/* <Notification /> */}
-
-                {/* Form Component */}
-                <LoginForm />
-
-                {/* User Component */}
-                <UserEdit />
               </Div>
             </Div>
           </Container>
