@@ -39,7 +39,7 @@
     "dev": "gatsby develop --host=0.0.0.0",
     "deploy": "gatsby clean && gatsby build && cd public && now --target production",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
