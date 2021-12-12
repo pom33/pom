@@ -142,7 +142,9 @@ class HeroSection extends React.Component {
               >
                 <CardComponent key="stress" cardImg={stressImage} title="Stress" />
 
-                <CardComponent key="insecurity" cardImg={insecurityImage} title="Insecurity"/>
+                <Link to="/docs/react/insecurity/insecurity">
+                  <CardComponent key="insecurity" cardImg={insecurityImage} title="Insecurity"/>
+                </Link>
 
               </Div>
             </Div>
