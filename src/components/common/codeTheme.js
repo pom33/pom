@@ -1,7 +1,7 @@
 var codeTheme = {
   plain: {
-    color: "#393A34",
-    backgroundColor: "#f7f8f9",
+    color: "#dda3d8",
+    backgroundColor: "#dda3d8",
   },
   styles: [
     {
