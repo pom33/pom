@@ -38,6 +38,23 @@
   z-index: 10;
 }
 
+.try-hover:hover, .try-hover:active {
+  color: "blue",
+ 
+}
+
+.btn-outline-offset::before {
+	margin: -4px;
+}
+		
+.btn-access:focus {
+	outline : 3px solid black
+}
+
+.btn-access{
+  padding: 5px;
+  color: black;
+}
 .translate-container .translate {
   animation: mymove 6s linear infinite;
 }

@@ -13,13 +13,14 @@ const list = [
     icon: intro1,
     heading: "Grounding Technique",
     subheading: "Control intense emotional experiences and regain mental focus",
-    link: "/docs/react/theme#columnCount",
+    //link: "/docs/react/anxiety/grounding_technique1",
+    link: "/docs/react/anxiety/grounding_technique",
   },
   {
     icon: intro2,
     heading: "Urge Surfing",
     subheading: "Distress Tolerance Skill - Manage unwanted behaviors",
-    link: "/docs/react/theme#availableColors",
+    link: "/docs/react/anxiety/urge_surfing",
   },
   {
     icon: intro3,
@@ -75,7 +76,7 @@ const Anxiety = () => (
                         >
                           {item.subheading}
                         </Text>
-                      <Link to={item.link}>
+                      <Link to={item.link} className="btn-access">
                         <Text
                           textColor="info700"
                           hoverTextColor="info800"

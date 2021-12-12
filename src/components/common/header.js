@@ -2,9 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Div, Image, Container, Button, Anchor, scrollTo, Icon } from "atomize"
-import logo from "../../images/logo.svg"
+// import logo1 from "../../images/logo.svg"
+import logo from "../../images/logohci.svg"
 import producthunt from "../../images/logo-producthunt.svg"
-
+import "../homepage/craft.css"
+// src/components/common/header.js
+// src/components/homepage/craft.css
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -43,6 +46,7 @@ class Header extends React.Component {
           p={{ y: { xs: "1.5rem", md: "1rem" } }}
         >
           <Div
+            className="btn-outline-offset"
             pos="absolute"
             top="0"
             left="0"
@@ -53,13 +57,15 @@ class Header extends React.Component {
             zIndex="-1"
           ></Div>
           <Container d="flex" align="center" justify="space-between">
-            <Div cursor="pointer">
+            <Div cursor="pointer" className="try-hover">
+            <Link to="/" className="btn-access">
               <Image
                 src={logo}
                 alt="atomize design system logo"
-                h="18px"
+                h="45px"
                 w="auto"
               />
+              </Link>
             </Div>
 
             {/* Icon For Mobile */}
@@ -70,6 +76,7 @@ class Header extends React.Component {
               onClick={() => this.toggleHeaderMenu(!showMobileHeaderMenu)}
             >
               <Div
+
                 h="2px"
                 w="1rem"
                 bg="black"
@@ -121,53 +128,18 @@ class Header extends React.Component {
               }}
               transition
             >
-              <Anchor
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-                textWeight="500"
-                textColor="medium"
-                hoverTextColor="black"
-                transition
-                onClick={() => scrollTo("#features")}
-              >
-                Features
-              </Anchor>
-
-              <Anchor
-                href="https://github.com/proksh/atomize"
-                target="_blank"
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-                textWeight="500"
-                textColor="medium"
-                hoverTextColor="black"
-                transition
-              >
-                Github
-              </Anchor>
-
-              <Anchor
+ 
+              <a className="btn-access"
                 href="http://atomizedesign.com"
                 target="_blank"
-                m={{ r: "2.5rem", b: { xs: "4rem", md: "0" } }}
+                // m={{ r: "2.5rem", b: { xs: "4rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
                 hoverTextColor="black"
                 transition
               >
-                For Designers
-              </Anchor>
-
-              <Link to="/docs/react/intro">
-                <Button
-                  bg="gray300"
-                  hoverBg="gray400"
-                  textColor="medium"
-                  w={{ xs: "100%", sm: "8.5rem" }}
-                  rounded="lg"
-                  style={{ letterSpacing: "-0.5px" }}
-                >
-                  Documentation
-                </Button>
-              </Link>
+                About Us
+              </a>
             </Div>
           </Container>
         </Div>
