@@ -62,6 +62,7 @@ const JournalTherapy = () => {
                             border="1px solid"
                             borderColor="gray400"
                             hoverBorderColor="gray600"
+                            className="btn-access"
                             rounded="lg"
                             p={{ l: "0.5rem", r: "1rem" }}
                             m={{ t: "1rem", b: "0rem" }}
