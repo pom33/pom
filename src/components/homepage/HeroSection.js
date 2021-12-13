@@ -15,13 +15,14 @@ import Buttons from "./uicomponents/Buttons"
 import CardComponent from "./uicomponents/CardComponent"
 import LoginForm from "./uicomponents/LoginForm"
 import intro3 from "../../images/anxiety/gamee.png"
+import "./craft.css"
 
 // import Notification from './uicomponents/Notification'
 class HeroSection extends React.Component {
   render() {
     return (
       <>
-        <Div tag="section" p={{ t: { xs: "6rem", md: "10rem" } }}>
+        <Div tag="section" p={{ t: { xs: "6rem", md: "5rem" } }}>
           <Container d="flex" flexDir="column" align="center">
             <Text
               tag="h1"
@@ -31,7 +32,7 @@ class HeroSection extends React.Component {
               fontFamily="secondary"
               m={{ b: "1rem" }}
             >
-              Design System for React JS
+              Peace Of Mind
             </Text>
             <Text
               tag="h2"
@@ -47,58 +48,13 @@ class HeroSection extends React.Component {
               with designers and build consistent user interfaces effortlessly.
             </Text>
 
-            <Div
-              d="flex"
-              w="100%"
-              justify="center"
-              flexDir={{ xs: "column", sm: "row" }}
-            >
-              <Link to="/docs/react/intro">
-                <Button
-                  h="3rem"
-                  w={{ xs: "100%", sm: "11rem" }}
-                  bg="info700"
-                  hoverBg="info600"
-                  rounded="lg"
-                  m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
-                >
-                  Get Started Now
-                </Button>
-              </Link>
-              <Anchor
-                href="https://www.youtube.com/watch?v=1uEJT3_M1Y0"
-                target="_blank"
-              >
-                <Button
-                  h="3rem"
-                  w={{ xs: "100%", sm: "11rem" }}
-                  bg="transparent"
-                  hoverBg="gray200"
-                  border="1px solid"
-                  borderColor="gray400"
-                  hoverBorderColor="gray600"
-                  rounded="lg"
-                  p={{ l: "0.5rem", r: "1rem" }}
-                  textColor="medium"
-                  prefix={
-                    <Icon
-                      name="Play"
-                      size="18px"
-                      m={{ r: "0.5rem" }}
-                      color="black400"
-                    />
-                  }
-                >
-                  Watch Video
-                </Button>
-              </Anchor>
-            </Div>
+            
           </Container>
         </Div>
         <Div
           tag="section"
           w="100vw"
-          p={{ t: { xs: "3rem", md: "6rem" } }}
+          p={{ t: { xs: "3rem", md: "1rem" } }}
           overflow="hidden"
         >
           <Container>
@@ -115,7 +71,7 @@ class HeroSection extends React.Component {
                   h={{ xs: "auto", md: "21rem",sm: "auto", lg: "20rem" }}
                   pos="relative"
                 >
-                  <Link to="/docs/react/anxiety/anxiety_techniques">
+                  <Link to="/docs/react/anxiety/anxiety_techniques" className="btn-access">
                     <CardComponent key="anxiety" cardImg={anxietyImage} title="Anxiety"/>
                   </Link>
                   <Link to="/docs/react/anger/anger">
@@ -123,7 +79,6 @@ class HeroSection extends React.Component {
                   </Link>
                   <CardComponent key="depression" cardImg={depressionImage} title="Depression"/>
                 </Div>
-            
              
             </Div>
           </Container>

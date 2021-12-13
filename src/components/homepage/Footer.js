@@ -103,24 +103,8 @@ const footerLinks = {
 const mediaLinks = [
   {
     icon: "Github",
-    link: "https://github.com/proksh",
-  },
-  {
-    icon: "Behance",
-    link: "https://www.behance.net/prokshh90d1",
-  },
-  {
-    icon: "Dribbble",
-    link: "https://dribbble.com/proksh",
-  },
-  {
-    icon: "Twitter",
-    link: "https://twitter.com/proksh_luthra",
-  },
-  {
-    icon: "Linkedin",
-    link: "https://www.linkedin.com/in/prokshluthra/",
-  },
+    link: "https://github.com/pom33/pom33.github.io",
+  }
 ]
 
 const Footer = () => {
@@ -131,61 +115,7 @@ const Footer = () => {
       pos="relative"
     >
       <Container>
-        <Div m={{ b: "8rem" }} d={{ xs: "none", md: "block" }}>
-          <Row>
-            {Object.keys(footerLinks).map((key, index) => {
-              return (
-                <Col
-                  size={{ xs: 6, md: 2 }}
-                  offset={{ xs: 0, md: index === 0 && 1 }}
-                >
-                  <Div
-                    p={{ l: { md: "2.5rem" }, b: { xs: "1.5rem", md: "0" } }}
-                    textColor="medium"
-                  >
-                    <Text
-                      m={{ b: "1rem" }}
-                      textColor="black"
-                      textTransform="capitalize"
-                      textWeight="500"
-                    >
-                      {key}
-                    </Text>
-                    {footerLinks[key].map((link, i) => {
-                      if (link.anchor) {
-                        return (
-                          <Anchor
-                            m={{ b: "0.5rem" }}
-                            textColor="medium"
-                            hoverTextColor="info800"
-                            d="block"
-                            href={link.link}
-                            target="_blank"
-                            textWeight="400"
-                          >
-                            {link.name}
-                          </Anchor>
-                        )
-                      } else {
-                        return (
-                          <Link to={link.link}>
-                            <Text
-                              m={{ b: "0.5rem" }}
-                              textColor="medium"
-                              hoverTextColor="info800"
-                            >
-                              {link.name}
-                            </Text>
-                          </Link>
-                        )
-                      }
-                    })}
-                  </Div>
-                </Col>
-              )
-            })}
-          </Row>
-        </Div>
+        
 
         <Div d="flex" align="center" justify="center" flexDir="column">
           <Text
@@ -195,7 +125,7 @@ const Footer = () => {
             textAlign="center"
             m={{ b: "1rem" }}
           >
-            Designed & Developed by Proksh Luthra
+            If you believe you or another individual is suffering a mental health crisis or other medical emergency, contact your doctor immediately, seek medical attention immediately in an emergency room or call 911. 
           </Text>
           <Div d="flex" align="center" justify="center">
             {mediaLinks.map((link, index) => (

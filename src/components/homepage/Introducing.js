@@ -41,16 +41,6 @@ class Intoducing extends React.Component {
     return (
       <Div tag="section" id="features" p={{ t: "8rem" }}>
         <Container>
-          <Tag
-            bg="black"
-            textColor="white"
-            h="2rem"
-            p={{ x: "1rem" }}
-            rounded="circle"
-            m={{ b: "2rem" }}
-          >
-            Key features
-          </Tag>
           <Text
             textSize="display1"
             textWeight="500"
