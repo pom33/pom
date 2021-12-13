@@ -82,7 +82,7 @@ const Depression = () => (
                           textWeight="500"
                           m={{ t: "2rem" }}
                         >
-                          Proceed &#10140;
+                          See How
                         </Text>
                       </Link>
                     </Div>
