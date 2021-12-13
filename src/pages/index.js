@@ -14,8 +14,8 @@ import Footer from "../components/homepage/Footer"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Design System for React JS"
-      description="Atomize React is a UI framework that helps developers collaborate with designers and build consistent user interfaces effortlessly."
+      title="Peace of mind"
+      description="A mental health application."
     />
     <Header />
     <HeroSection />
