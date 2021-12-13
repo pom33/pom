@@ -6,7 +6,7 @@ import { Button, Row, Col, Container, Text, Div, Icon, Input, Anchor } from "ato
 import boy from "../../images/avatar/boy.png"
 import anxietyImage from "../../images/hero-illustration/anxiety.png"
 import angerImage from "../../images/hero-illustration/anger.png"
-import depressionImage from "../../images/hero-illustration/depression.png"
+import depressionImage from "../../images/depression/dep3.png"
 import stressImage from "../../images/hero-illustration/stress.png"
 import insecurityImage from "../../images/hero-illustration/insecurity.png"
 import FollowCard from "./uicomponents/FollowCard"
@@ -76,8 +76,9 @@ class HeroSection extends React.Component {
                   </Link>
 
                   <CardComponent key="anger" cardImg={angerImage} title="Anger" />
-
+                  <Link to="/docs/react/Depression/dep_resources">
                   <CardComponent key="depression" cardImg={depressionImage} title="Depression"/>
+                  </Link>
                 </Div>
              
             </Div>
