@@ -18,19 +18,19 @@ const list = [
     {
         icon: intro1,
         heading: "Anger Iceberg",
-        subheading: "Prompts to bring about awareness and improve mental health conditions",
+        subheading: "Understand the underlying feelings that anger is protecting",
         link: "/docs/react/anger/anger-iceberg/anger-iceberg",
     },
     {
         icon: intro2,
         heading: "Relaxation Techniques",
-        subheading: "Changing your thoughts will change how you feel and behave",
+        subheading: "Practice these anger management techniques and relax!",
         link: "/docs/react/anger/relaxation-tech/relaxation-tech",
     },
     {
         icon: intro3,
         heading: "Stress Relief Paintball",
-        subheading: "Some ways to learn coping mechanisms is through playing games. This game helps distract you from rage that you may be feeling",
+        subheading: "Coping with anger through playing games",
         link: "/docs/react/anger/paintball-game/paintball-game",
     },
 ];

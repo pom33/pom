@@ -7,11 +7,11 @@ import intro1 from "../../../../../images/anger/medi.jpeg";
 
 const item = {
     icon: intro1,
-    heading: "The Cognitive Triangle: What it is and How it Works",
-    subheading: "Cognitive Triangle emphasizes the relationship between our thoughts, our feelings, and our behaviors. More specifically, how our thoughts change the way that we feel, which subsequently changes the way that we act, which then influences our thoughts.",
+    heading: "Different Relaxation Techniques",
+    subheading: "Relaxation skills are excellent tools for treatment of anger. In addition to being easy to use, these techniques are some of the few tools that offer an immediate sense of relief from any rage that you might be feeling.",
     secondSubHeader: "Here is how the Cognitive Triangle plays out in our day to day life:",
     videoTitle: "A Video on Thoughts, Feelings and Behaviors",
-    link: "https://www.youtube.com/embed/PcFmrVZ0e-I",
+    link: "https://www.youtube.com/embed/dHzS_RBtnXE",
 };
 
 const list = [
