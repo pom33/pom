@@ -1,28 +1,40 @@
 import React from "react";
-import { Div, Text, Container, Image } from "atomize";
+import { Div, Text, Container, Image, Row, Col } from "atomize";
 import Header from "../../../../../components/common/header";
 import Layout from "../../../../../components/layout";
 
-import intro1 from "../../../../../images/anger/medi.jpeg";
+import intro1 from "../../../../../images/anger/breathe.jpg";
+import intro2 from "../../../../../images/anger/pmr.png";
+import intro3 from "../../../../../images/anger/beach.jpg";
 
 const item = {
     icon: intro1,
     heading: "Different Relaxation Techniques",
     subheading: "Relaxation skills are excellent tools for treatment of anger. In addition to being easy to use, these techniques are some of the few tools that offer an immediate sense of relief from any rage that you might be feeling.",
-    secondSubHeader: "Here is how the Cognitive Triangle plays out in our day to day life:",
-    videoTitle: "A Video on Thoughts, Feelings and Behaviors",
-    link: "https://www.youtube.com/embed/dHzS_RBtnXE",
+    videoTitle1: "Here are a few videos to get you started:",
+    link1: "https://www.youtube.com/embed/dHzS_RBtnXE",
+    link2: "https://www.youtube.com/embed/1nZEdqcGVzo",
 };
 
 const list = [
-    "You wake up feeling tired, groggy, and insecure. You have a massive presentation today and you hate having to speak in front of groups.",
-    "Your thoughts start up: “I’m going to mess up”, “No one is going to like my presentation”, “I can’t even talk in front of a group, how am I going to achieve anything?”, “I’m worthless”, “I’m a loser”, “I should just stay home so I don’t make a fool out of myself”. These thoughts often make up the internal dialogue that we have with ourselves. How many times have you found yourself saying similar things?",
-    "Now enter feelings. After a morning filled with internal verbal assault, you’re feeling even worse. You feel extremely anxious about your upcoming presentation (AKA the now impending doom). Overall, you’re feeling really bad about yourself and the last thing you want to do is present. Let’s step back for a minute. Is it any surprise that our thoughts so directly influence our feelings? The things that we tell ourselves matter.",
-    "Here comes the behavior. After time spent grappling back and forth and procrastinating going, you make it out the door and now you’re just starting your presentation. As you begin, your thoughts are running rampant and you’re feeling as anxious as ever. Even though you know your presentation subject matter very well, you can’t seem to articulate your thoughts in the way you want to. You barely scrape through your presentation, stumbling on your words and failing to connect the points you worked so hard to create. In common terms, you choked up. How many times have we done this? Gotten ourselves so worked up that we can barely make it through something that is typically well within our capabilities.",
-    "This presentation put another dent in your confidence. The event seems to justify all of those negative thoughts you had about yourself. The cycle repeats. And repeats. And repeats.",
+    {
+        icon: intro1,
+        heading: "Deep Breathing",
+        subheadinglist: ["Sit in a comfortable position.", "Breathe in slowly through your nose.", "Hold the air within your lungs but without strain, ideally 4 seconds.", "Pucker your lips and slowly exhale. Time the exhalation to last 6 seconds. TIP: For practice try exhaling through a straw, this will help slow exhalation.", "Repeat the cycle for atleast 2 minutes."],
+    },
+    {
+        icon: intro2,
+        heading: "Progressive Muscle Relaxation",
+        subheadinglist: ["Sit in a comfortable position.", "Tightly tense the muscles in your feet by curling your toes. Hold the tension for 5-10 seconds.", "Now release the tension from feet and allow them to relax", "Move up your body, repeating the cycle of tensing and relaxing each group of muscles: legs, pelvis, stomach, chest, back, arms and neck", "Practice daily for positive effect."],
+    },
+    {
+        icon: intro3,
+        heading: "Guided Imagery",
+        subheadinglist: ["Sit back and close your eyes.", "Think of a place or a memory that is calming to you like a warm beach, a mountaintop or a cozy coffee shop.", "Begin to imagine that scene. Imagine what would you hear, smell, feel and taste.", "Set a timer for 5-10 minutes and allow yourself to get lost in the scene. Remember this time is only about your relaxation."],
+    },
 ];
 
-const CognitiveTriangle = () => (
+const Relaxation = () => (
     <Layout>
         <Header />
 
@@ -37,41 +49,74 @@ const CognitiveTriangle = () => (
                             {item.subheading}
                         </Text>
                     </Div>
-                    <Div align="center" d="flex" flexDir="column">
-                        <Image
-                            src={item.icon}
-                            alt="Cognitive Triangle diagram"
-                            h="100vh"
-                            w="auto"
-                        />
-                    </Div>
-                    <Div
-                        border="0.25px solid"
-                        borderColor="lightgrey"
-                        w="100%"
-                        m={{ t: "1rem", b: "2rem" }}
-                    ></Div>
-                    <Text textSize="subheader" textColor="medium" textWeight="500">
-                        {item.secondSubHeader}
-                    </Text>
-                    <ul>
-                        {list.map(text => {
-                            return (
-                                <li>
-                                    <Text
-                                        tag="h5"
-                                        textWeight="400"
-                                        textSize="subheader"
-                                        fontFamily="secondary"
-                                        textColor="medium"
-                                        m={{ b: "0.5rem" }}
-                                    >
-                                        {text}
-                                    </Text>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                    <Row>
+                            {list.map((elem, index) => (
+                                <Col size={{ xs: 12, sm: 6, lg: 4 }}>
+                                    <Div m={{ b: { xs: "1rem", lg: "0" } }}>
+                                        <Div
+                                            border="1px solid"
+                                            borderColor="gray200"
+                                            h="100%"
+                                            d="flex"
+                                            flexDir="column"
+                                            p="2rem"
+                                            shadow="3"
+                                            rounded="xl"
+                                        >
+                                            <Div
+                                                flexGrow="1"
+                                                bgImg={elem.icon}
+                                                bgSize="contain"
+                                                bgPos="center"
+                                                bgRepeat="no-repeat"
+                                                p={{ b: "84%" }}
+                                            >
+                                                <Text
+                                                    textSize="title"
+                                                    textWeight="500"
+                                                    m={{ b: "0rem" }}
+                                                >
+                                                    {elem.heading}
+                                                </Text>
+                                            </Div>
+                                            {elem.subheadinglist
+                                                ? 
+                                                <ol>
+                                                    {elem.subheadinglist.map(text => {
+                                                        return (
+                                                            <li>
+                                                                <Text
+                                                                    tag="h5"
+                                                                    textWeight="400"
+                                                                    textSize="subheader"
+                                                                    fontFamily="secondary"
+                                                                    textColor="medium"
+                                                                    m={{ b: "0.5rem" }}
+                                                                >
+                                                                    {text}
+                                                                </Text>
+                                                            </li>
+                                                        )
+                                                    })}
+                                                </ol>
+                                                : null}
+                                            {elem.subheading 
+                                                ? 
+                                                <Text
+                                                    textSize="subheader"
+                                                    textColor="medium"
+                                                    textWeight="500"
+                                                >
+                                                    {elem.subheading}
+                                                </Text>
+                                                : null}
+                                            
+                                        </Div>
+                                    </Div>
+                                </Col>
+                            ))}
+                        </Row>
+
                     <Div
                         border="0.25px solid"
                         borderColor="lightgrey"
@@ -79,7 +124,7 @@ const CognitiveTriangle = () => (
                         m={{ t: "2rem", b: "2rem" }}
                     ></Div>
                     <Text textSize="title" textWeight="500">
-                        {item.videoTitle}
+                        {item.videoTitle1}
                     </Text>
                     <Div h="100vh" w="100%" m={{ b: { xs: "1rem", lg: "0" } }}>
                         <Div
@@ -94,7 +139,24 @@ const CognitiveTriangle = () => (
                             rounded="xl"
                         >
                             <Div flexGrow="1" bgPos="center" h="100%" w="100%">
-                                <iframe width="100%" height="100%" src={item.link} />
+                                <iframe width="100%" height="100%" src={item.link2} />
+                            </Div>
+                        </Div>
+                    </Div>
+                    <Div h="100vh" w="100%" m={{ b: { xs: "1rem", lg: "0" } }}>
+                        <Div
+                            border="1px solid"
+                            borderColor="gray200"
+                            h="100%"
+                            w="100%"
+                            d="flex"
+                            flexDir="column"
+                            p="2rem"
+                            shadow="3"
+                            rounded="xl"
+                        >
+                            <Div flexGrow="1" bgPos="center" h="100%" w="100%">
+                                <iframe width="100%" height="100%" src={item.link1} />
                             </Div>
                         </Div>
                     </Div>
@@ -104,4 +166,4 @@ const CognitiveTriangle = () => (
     </Layout>
 );
 
-export default CognitiveTriangle;
+export default Relaxation;

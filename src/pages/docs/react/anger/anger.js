@@ -11,7 +11,7 @@ import intro3 from "../../../../images/anger/paintball-game.jpg";
 const item = {
     icon: intro1,
     heading: "Anger",
-    subheading: "Ways to deal with Anger",
+    subheading: "Coping with Anger Management",
 };
 
 const list = [

@@ -89,7 +89,7 @@ const Insecurity = () => {
                                                 >
                                                     {item.subheading}
                                                 </Text>
-                                                <Link to={item.link}>
+                                                <Link to={item.link} className="btn-access">
                                                     <Text
                                                         textColor="info700"
                                                         hoverTextColor="info800"

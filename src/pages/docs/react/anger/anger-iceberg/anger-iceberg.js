@@ -1,34 +1,19 @@
 import React, { useState } from "react";
-import { Div, Text, Container, Button, Textarea } from "atomize";
+import { Div, Text, Container, Image } from "atomize";
 import Header from "../../../../../components/common/header";
 import Layout from "../../../../../components/layout";
 
-import intro1 from "../../../../../images/anger/ice1.jpeg";
+import intro1 from "../../../../../images/anger/icebergmain.jpg";
 
 const item = {
     icon: intro1,
     heading: "Anger Iceberg",
-    subheading: "Write away your thoughts",
-    secondSubHeader: "Tips for Therapeutic Journal Writing",
+    subheading: "Anger Iceberg represents the idea that, although anger is displayed outwardly, other emotions may be hidden beneath the surface. By exploring what is beneath the surface you can gain an insight into your anger and work towards it accordingly.",
+    secondSubHeader: "Take this quick anger assessment test:",
+    link: "https://www.gracepointwellness.org/116-anger-management/article/3396-anger-quiz",
 };
 
-const list = [
-    "Ensure your privacy: Keep your journal materials in a safe place which in this case, it is. Trust us, we do not have your journal contents.",
-    "Return to what you have written: Save everything you write, when appropriate, and review it often. The process of going back to what you have written can not only spark inspiration for future writing, but can offer perspective on how far you have come.",
-    "Time yourself: Using timed writing exercises can help you avoid writer’s block and help you tap into relevant unconscious material.",
-    "Write freely: Hush your inner critic and ignore the urge to edit your work. Therapeutic journal writing is not meant to be pretty or grammatically correct; it is meant to be real.",
-    "Be honest with yourself: Honor your thoughts, feelings, and experiences with the authenticity they deserve. More work gets accomplished when you are your genuine self in your writing.",
-];
-
 const Iceberg = () => {
-    const storedText = localStorage.getItem("text");
-    const [text, setText] = useState(storedText || "");
-
-    const storeText = () => {
-        console.log("Saved", text);
-        localStorage.setItem("text", text);
-    };
-
     return (
         <Layout>
             <Header />
@@ -42,34 +27,15 @@ const Iceberg = () => {
                         <Text textSize="subheader" textColor="medium" textWeight="500">
                             {item.subheading}
                         </Text>
-                        <Textarea
-                            textColor="info700"
-                            hoverTextColor="info800"
-                            textWeight="500"
-                            d="flex"
-                            flexGrow={{ xs: "1", sm: "4", md: "2", lg: "3", xl: "2" }}
-                            h={{ xs: "auto", md: "45vh" }}
-                            w={{ xs: "auto", md: "180vh" }}
-                            m={{ t: "2rem" }}
-                            value={text}
-                            onChange={event => setText(event.target.value)}
-                        ></Textarea>
-                        <Button
-                            h="3rem"
-                            w={{ xs: "100%", sm: "11rem" }}
-                            bg="transparent"
-                            hoverBg="gray200"
-                            border="1px solid"
-                            borderColor="gray400"
-                            hoverBorderColor="gray600"
-                            rounded="lg"
-                            p={{ l: "0.5rem", r: "1rem" }}
-                            m={{ t: "1rem", b: "0rem" }}
-                            textColor="medium"
-                            onClick={() => storeText()}
-                        >
-                            Save
-                        </Button>
+                        <Div align="center" d="flex" flexDir="column">
+                            <Image
+                                src={item.icon}
+                                alt="Anger Iceberg Image"
+                                h="100vh"
+                                w="auto"
+                            />
+                        </Div>
+                        
                         <Text
                             textSize="subheader"
                             textColor="medium"
@@ -78,24 +44,23 @@ const Iceberg = () => {
                         >
                             {item.secondSubHeader}
                         </Text>
-                        <ul>
-                            {list.map(text => {
-                                return (
-                                    <li>
-                                        <Text
-                                            tag="h5"
-                                            textWeight="400"
-                                            textSize="subheader"
-                                            fontFamily="secondary"
-                                            textColor="medium"
-                                            m={{ b: "0.5rem" }}
-                                        >
-                                            {text}
-                                        </Text>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                        <Div h="100vh" w="100%" m={{ b: { xs: "1rem", lg: "0" } }}>
+                        <Div
+                            border="1px solid"
+                            borderColor="gray200"
+                            h="100%"
+                            w="100%"
+                            d="flex"
+                            flexDir="column"
+                            p="2rem"
+                            shadow="3"
+                            rounded="xl"
+                        >
+                            <Div flexGrow="1" bgPos="center" h="100%" w="100%">
+                                <iframe width="100%" height="100%" src={item.link} />
+                            </Div>
+                        </Div>
+                    </Div>
                     </Div>
                 </Container>
             </Div>
