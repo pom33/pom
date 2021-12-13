@@ -4,29 +4,29 @@ import { Div, Text, Row, Col, Container, Image, Tag } from "atomize"
 import Header from "../../../../components/common/header"
 import Layout from "../../../../components/layout"
 
-import intro1 from "../../../../images/anxiety/grounding_technique.png"
-import intro2 from "../../../../images/anxiety/urge-surfing.png"
-import intro3 from "../../../../images/anxiety/gamee.png"
+import intro1 from "../../../../images/stress/exploration.png"
+import intro2 from "../../../../images/stress/selfcare.jpg"
+import intro3 from "../../../../images/stress/plumberduck.jpg"
+
 
 const list = [
   {
     icon: intro1,
-    heading: "Grounding Technique",
-    subheading: "Control intense emotional experiences and regain mental focus",
-    //link: "/docs/react/anxiety/grounding_technique1",
-    link: "/docs/react/anxiety/grounding_technique",
+    heading: "Stress Exploration",
+    subheading: "Counteract feelings of despair by identifying factors that protect you from daily stressors.",
+    link: "/docs/react/stress/exploration",
   },
   {
     icon: intro2,
-    heading: "Urge Surfing",
-    subheading: "Distress Tolerance Skill - Manage unwanted behaviors",
-    link: "/docs/react/anxiety/urge_surfing",
+    heading: "Self Care Assessment",
+    subheading: "Learn about your self-care needs by spotting patterns and recognizing areas that need more attention.",
+    link: "/docs/react/stress/selfcare",
   },
   {
     icon: intro3,
     heading: "Play a Game!",
-    subheading: "Adventures with Anxiety - An Interactive Story",
-    link: "https://ncase.itch.io/anxiety",
+    subheading: "Play an engaging game to help focus a wandering mind and avoid overthinking.",
+    link: "/docs/react/stress/pduck",
   },
 
 ]
