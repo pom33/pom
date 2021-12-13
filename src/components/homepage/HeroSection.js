@@ -95,7 +95,9 @@ class HeroSection extends React.Component {
                 h={{ xs: "auto", md: "21rem",sm: "auto", lg: "20rem" }}
                 pos="relative"
               >
+                <Link to="/docs/react/stress/stress" className="btn-access">
                 <CardComponent key="stress" cardImg={stressImage} title="Stress" />
+                </Link>
 
                 <Link to="/docs/react/insecurity/insecurity">
                   <CardComponent key="insecurity" cardImg={insecurityImage} title="Insecurity"/>
