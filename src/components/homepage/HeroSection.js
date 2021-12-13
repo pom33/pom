@@ -75,7 +75,8 @@ class HeroSection extends React.Component {
                     <CardComponent key="anxiety" cardImg={anxietyImage} title="Anxiety"/>
                   </Link>
 
-                  <CardComponent key="anger" cardImg={angerImage} title="Anger" />
+                  <CardComponent key="anger" cardImg={angerImage} title="Anger" className="btn-access"/>
+
                   <Link to="/docs/react/Depression/dep_resources">
                   <CardComponent key="depression" cardImg={depressionImage} title="Depression"/>
                   </Link>
@@ -100,7 +101,7 @@ class HeroSection extends React.Component {
                   <CardComponent key="stress" cardImg={stressImage} title="Stress" />
                 </Link>
 
-                <Link to="/docs/react/insecurity/insecurity">
+                <Link to="/docs/react/insecurity/insecurity" className="btn-access">
                   <CardComponent key="insecurity" cardImg={insecurityImage} title="Insecurity"/>
                 </Link>
 
