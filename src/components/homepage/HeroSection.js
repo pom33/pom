@@ -5,10 +5,10 @@ import { Button, Row, Col, Container, Text, Div, Icon, Input, Anchor } from "ato
 
 import boy from "../../images/avatar/boy.png"
 import anxietyImage from "../../images/hero-illustration/anxiety.png"
-import angerImage from "../../images/hero-illustration/anger.png"
+import angerImage from "../../images/anger/angermain.jpg"
 import depressionImage from "../../images/depression/dep3.png"
 import stressImage from "../../images/hero-illustration/stress.png"
-import insecurityImage from "../../images/hero-illustration/insecurity.png"
+import insecurityImage from "../../images/insecurity/insecmain.jpg"
 import FollowCard from "./uicomponents/FollowCard"
 import UserEdit from "./uicomponents/UserEdit"
 import Buttons from "./uicomponents/Buttons"
@@ -44,8 +44,7 @@ class HeroSection extends React.Component {
               textColor="medium"
               m={{ b: "2.5rem" }}
             >
-              Atomize React is a UI framework that helps developers collaborate
-              with designers and build consistent user interfaces effortlessly.
+              Mental Health is an undeniably important matter, yet most people do not have access to the resources they need when they need help. At Peace Of Mind, we have compiled a comprehensive list of resources including therapy worksheets, visual help, assessments and interactive games.
             </Text>
 
             
@@ -75,7 +74,9 @@ class HeroSection extends React.Component {
                     <CardComponent key="anxiety" cardImg={anxietyImage} title="Anxiety"/>
                   </Link>
 
-                  <CardComponent key="anger" cardImg={angerImage} title="Anger" className="btn-access"/>
+                  <Link to="/docs/react/anger/anger" className="btn-access">
+                    <CardComponent key="anger" cardImg={angerImage} title="Anger" />
+                  </Link>
 
                   <Link to="/docs/react/Depression/dep_resources" className="btn-access">
                     <CardComponent key="depression" cardImg={depressionImage} title="Depression"/>
