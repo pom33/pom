@@ -124,8 +124,8 @@ const Ground = () => {
                         { active===3 ? <ul>
                         <li>It is okay to have urges. They are natural reactions to addictions and habits.</li>
                         <li>Some discomfort is okay. I don't have to change it</li>
-                        <li>An urge is a feeling, not a "must. I can have this feeling and choose not to act.</li>
-                        <li>An urge is temporaty, Like any other feeling, it will pass on its own.</li>
+                        <li>An urge is a feeling, not a must. 'I can have this feeling and choose not to act.'</li>
+                        <li>An urge is temporary, Like any other feeling, it will pass on its own.</li>
                         </ul>
                         : null}
                         <Div d="flex" p="1rem"  m={{ l: "auto", r:"auto" }}>
