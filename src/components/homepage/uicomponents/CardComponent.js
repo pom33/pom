@@ -1,6 +1,6 @@
 import React from "react"
 
-import girl2 from "../../../images/avatar/girl2.png"
+import girl2 from "../../../images/avatar/girl3.jpeg"
 // import cardImg from "../../../images/hero-illustration/card-img.png"
 
 import { Button, Text, Div, Icon } from "atomize"
