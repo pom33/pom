@@ -14,7 +14,7 @@ const list = [
   {
     icon: intro1,
     heading: "Urge Surfing",
-    subheading: "Urge surfing is a technique for managing your urwanted behaviors, Rather than giving in to an urge, you will ride it out, like a surfer riding a wave. After a short time, the urge will pass on its own.",
+    subheading: "Urge surfing is a technique for managing your unwanted behaviors, Rather than giving in to an urge, you will ride it out, like a surfer riding a wave. After a short time, the urge will pass on its own.",
     subheading2: "",
   },
   {
