@@ -34,13 +34,16 @@ const Anxiety = () => (
 <Layout>
   <Header />
 
-<Div tag="section" id="features" p={{ t: "8rem" }}>
-        <Container d="flex" align="center">
-          <Div
-            p={{ b: "6rem" }}
-            d="flex"
-            align="center"
-          >
+  <Div tag="section" id="features" p={{ t: "8rem" }}>
+      <Container d="flex" align="center">
+          <Div p={{ b: "6rem" }} align="center">
+              <Div m={{ b: "1rem" }}>
+                  <Text textSize="title" textWeight="500" m={{ b: "1rem" }}>
+                    Stress
+                  </Text>
+                  <Text textSize="subheader" textColor="medium" textWeight="500">
+                  </Text>
+              </Div>
             <Row>
               {list.map(item => (
                 <Col size={{ xs: 12, sm: 6, lg: 4 }}>
