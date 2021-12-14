@@ -48,9 +48,9 @@ const Anger = () => {
                                 <Text textSize="title" textWeight="500" m={{ b: "1rem" }}>
                                     {item.heading}
                                 </Text>
-                                <Text textSize="subheader" textColor="medium" textWeight="500">
+                                {/* <Text textSize="subheader" textColor="medium" textWeight="500">
                                     {item.subheading}
-                                </Text>
+                                </Text> */}
                             </Div>
                             <Row>
                                 {list.map(item => (

@@ -30,7 +30,7 @@ const list = [
     {
         icon: intro3,
         heading: "2048",
-        subheading: "You can get really fixated on this game, which is perfect when you don't want to think about anything else.",
+        subheading: "Distract yourself by playing this wonderful game.",
         link: "/docs/react/insecurity/2048-game/2048-game",
     },
 ];
@@ -48,9 +48,9 @@ const Insecurity = () => {
                                 <Text textSize="title" textWeight="500" m={{ b: "1rem" }}>
                                     {item.heading}
                                 </Text>
-                                <Text textSize="subheader" textColor="medium" textWeight="500">
+                                {/* <Text textSize="subheader" textColor="medium" textWeight="500">
                                     {item.subheading}
-                                </Text>
+                                </Text> */}
                             </Div>
                             <Row>
                                 {list.map(item => (
