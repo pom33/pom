@@ -25,7 +25,7 @@ const list = [
   {
     icon: intro3,
     heading: "Depression Test",
-    subheading: "Consider taking quiz to help you determine if you might benefit from an evaluation by a mental health professional.",
+    subheading: "Take a quiz to help you determine if you might benefit from an evaluation by a mental health professional.",
     link: "/docs/react/Depression/Identifying/id3",
   },
 
@@ -66,7 +66,7 @@ class Identifying extends React.Component {
             A sense of hopelessness, the feeling of being “weighed down,” and a loss of enjoyment in things that used to bring you joy — 
             these are some common signs of depression, one of the most widespread mental health issues in the world. 
             Clinical depression goes by many names, such as “the blues,” biological or clinical depression, and major depressive disorder (MDD). 
-            The World Health Organization (WHO)Trusted Source estimates that over 264 million people live with depression. 
+            The World Health Organization (WHO) estimates that over 264 million people live with depression. 
             Even simple things — like getting dressed in the morning or eating at mealtime — can feel like large obstacles when you have depression. 
             Depression symptoms take many forms, and no two people’s experiences are exactly alike. 
             A person with depression may not always seem sad to others. And when friends or family do notice signs of depression, they may want to help but not know how.
