@@ -78,7 +78,7 @@ class Identifying extends React.Component {
           >
             <Row>
               {list.map(item => (
-                <Col size={{ xs: 12, sm: 6, lg: 3 }}>
+                <Col size={{ xs: 12, sm: 6, lg: 4 }}>
                   <Div m={{ b: { xs: "1rem", lg: "0" } }}>
                     <Div
                       border="1px solid"
