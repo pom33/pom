@@ -12,20 +12,20 @@ const list = [
   {
     icon: intro1,
     heading: "What is depression?",
-    subheading: "Depression is a widespread mental health disorder. So if you have it, you’re definitely not alone.",
+    subheading: "Depression is a widespread mental health disorder. So if you have it, you’re definitely not alone",
     link: "/docs/react/Depression/Identifying/id1",
   },
   {
     icon: intro2,
     heading: "Symptoms of depression",
-    subheading: "Major depression can cause a range of symptoms that last 2 weeks or longer and appears differently for each person. ",
+    subheading: "Major depression can cause a range of symptoms that last 2 weeks or longer and appears differently for each person",
     link: "/docs/react/Depression/Identifying/id2",
   },
 
   {
     icon: intro3,
     heading: "Depression Test",
-    subheading: "Consider taking quiz to help you determine if you might benefit from an evaluation by a mental health professional.",
+    subheading: "Consider taking quiz to help you determine if you might benefit from an evaluation by a mental health professional",
     link: "/docs/react/Depression/Identifying/id3",
   },
 

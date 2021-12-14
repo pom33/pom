@@ -31,7 +31,7 @@ const list = [
   {
     icon: intro3,
     heading: "Depression Quest",
-    subheading: "A game to help user understand what depression is like.",
+    subheading: "A game to help user understand what depression is like",
     link: "http://www.depressionquest.com/dqfinal.html",
   },
 

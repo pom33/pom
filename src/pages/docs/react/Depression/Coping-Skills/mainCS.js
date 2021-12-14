@@ -12,13 +12,13 @@ const list = [
   {
     icon: intro1,
     heading: "Coping Skills",
-    subheading: "Depression is a widespread mental health disorder. So if you have it, you’re definitely not alone.",
+    subheading: "Depression is a widespread mental health disorder. So if you have it, you’re definitely not alone",
     link: "/docs/react/Depression/Coping-Skills/coping-skills",
   },
   {
     icon: intro2,
     heading: "Additional Resources",
-    subheading: "Your Depression treatment options are almost limitless.",
+    subheading: "Your Depression treatment options are almost limitless",
     link: "/docs/react/Depression/Coping-Skills/addR",
   },
 ]
@@ -58,7 +58,7 @@ class mainCS extends React.Component {
             Life events or major life changes, like moving away, can also cause depression and related conditions.
             Feeling a lack of meaning or purpose can be one of the most common causes of depression, especially when you lose contact with activities that provide a sense of meaning, purpose, or sense of self.<br/> <br/>
             
-            A number of things that can cause or contribute to depression, including:
+            A number of things that can cause or contribute to depression, including:<br/>
             &bull; Brain structure: Research suggests that the hippocampus is smaller in some people with depression. A less active frontal lobe could also cause it.<br/>
             &bull; Biochemistry: Differences in certain brain chemicals could contribute to depression.<br/>
             &bull; Family history: You are more likely to have depression if depression or another mental health condition runs in your family.<br/>
