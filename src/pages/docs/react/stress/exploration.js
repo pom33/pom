@@ -4,28 +4,21 @@ import { Div, Text, Row, Col, Container, Image, Tag, Input, Button, Icon } from 
 import Header from "../../../../components/common/header"
 import Layout from "../../../../components/layout"
 import { userState } from 'react';
-import ManagingRadioboxWithState from "./selfcare"
 
-// import intro1 from "../../../../images/anxiety/grounding_technique.png"
-// import intro2 from "../../../../images/anxiety/urge-surfing.png"
-// import intro3 from "../../../../images/anxiety/gamee.png"
 
 
 const list = [
   {
-    // icon: intro1,
     heading: "Daily Uplifts",
     subheading: "What are some positive experiences that make you happy?",
     subheading2: "Examples: eating a good meal, spending time with friends, leisure activities, spending time in nature",
   },
   {
-    // icon: intro2,
     heading: "Healthy Coping Strategies",
     subheading: "What are some positive actions that help to reduce or manage stress and other uncomfortable emotions?",
     subheading2: "Examples: exercise, talking about problems, self-care, journaling, relaxation techniques",
   },
   {
-    // icon: intro3,
     heading: "Protective Factors",
     subheading: "List any individual characteristics or life circumstances that protect you from stress.",
     subheading2: "Examples: financial stability, good physical health, supportive family, motivation to succeed, education",
@@ -95,7 +88,7 @@ const Ground = () => {
                       <Div flexGrow="1"
                         bgPos="center"
                         bgRepeat="no-repeat"
-                        p={{ b: "8%" }}>
+                        p={{ b: "3%" }}>
                         
                         <Text
                           textSize="title"
@@ -104,7 +97,12 @@ const Ground = () => {
                         >
                           {data.heading}
                         </Text>
-                        
+                        <Text>
+                        Stress is a feeling of being tense, overwhelmed, worn out, or exhausted. 
+                        A small amount of stress can be motivating, but too much stress makes even small tasks seem daunting. 
+                        Sometimes stress is the accumulation of many small hassles, while other times it is the result of major life changes or long-term problems.
+                        Things that protect against stress include daily uplifts, healthy coping strategies, and protective factors.
+                        </Text>
                       </Div>
                       <Text
                            textSize="subheader"
@@ -131,7 +129,7 @@ const Ground = () => {
                         <Div p="0.5rem">
                         <Input id ="3" onChange={handleChange} placeholder="4." value={inValues[active][3]}/>
                         </Div>
-                        <Div d="flex" p="1rem"  m={{ l: "25%" }}>
+                        <Div d="flex" p="1rem"  m={{ l: "auto", r:"auto" }}>
                         {active > 0 ? 
                         <Button onClick={() => onBack()} prefix={
                         <Icon

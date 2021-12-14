@@ -8,10 +8,19 @@ import Radiobox2 from "../../../../components/stress/RadioBox2";
 import { Component } from 'react';
 
 
-const heading = 'Physical Self-Care'
-const lis = ['Eat healthy foods', 'Take care of personal hygiene', 'Exercise', 'Wear clothes that help me feel good about myself', 'Eat regularly', 
-    'Participate in fun activities (e.g. walking, swimming, dancing, sports)', 'Get enough sleep', 'Go to preventative medical appointments (e.g. checkups, teeth cleanings)', 
-    'Rest when sick', 'Overall physical self-care']
+const heading = 'Psychological / Emotional Self-Care'
+const lis = [
+    'Take time off from work, school, and other obligations',
+    'Participate in hobbies',
+    'Get away from distractions (e.g. phone, email)',
+    'Learn new things, unrelated to work or school',
+    'Express my feelings in a healthy way (e.g. talking, creating art, journaling)',
+    'Recognize my own strengths and achievements',
+    'Go on vacations or day-trips',
+    'Do something comforting (e.g. re-watch a favorite movie, take a long bath)',
+    'Find reasons to laugh',
+    'Talk about my problems',
+    'Overall psychological and emotional self-care']
 
 class App extends Component {
 
@@ -56,13 +65,13 @@ class App extends Component {
                         </Row>
                         ))}
                         <Div d="flex" p="1rem"  m={{ l: "auto", r:"auto" }}>
-                        <Div d="flex" align="center" m={{l: "43%"}}><Button onClick={event => window.location.href='/docs/react/stress/selfcare2'}   suffix={
+                        <Div d="flex" align="center" m={{l: "43%"}}><Button onClick={event =>  window.location.href='/docs/react/stress/stress'}   suffix={
                         <Icon name="LongRight" size="16px" color="white" m={{ l: "1rem" }}/>}
                         shadow="3"
                         hoverShadow="4"
                         m={{ r: "1rem" }}
                         align="right">
-                       Next
+                       Finish
                     </Button>
                     </Div>
                 </Div>
