@@ -111,7 +111,7 @@ const Footer = () => {
   return (
     <Div
       tag="footer"
-      p={{ t: { xs: "12rem", md: "8rem" }, b: { xs: "4rem", md: "5rem" } }}
+      p={{ t: { xs: "12rem", md: "8rem" }, b: { xs: "4rem", md: "1rem" } }}
       pos="relative"
     >
       <Container>

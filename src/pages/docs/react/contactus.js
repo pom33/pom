@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Div, Text, Container, Button, Textarea } from "atomize";
 import Header from "../../../components/common/header1";
+import Footer from "../../../components/homepage/Footer";
 import Layout from "../../../components/layout";
 
 // import intro1 from "../../../../../images/insecurity/journal-therapy.jpg";
@@ -21,12 +22,12 @@ const item = {
 // ];
 
 const ContactUs = () => {
-    const storedText = localStorage.getItem("text");
+    const storedText = localStorage.getItem("feedback");
     const [text, setText] = useState(storedText || "");
 
     const storeText = () => {
         console.log("Saved", text);
-        localStorage.setItem("text", text);
+        localStorage.setItem("feedback", text);
     };
 
     return (
@@ -100,6 +101,7 @@ const ContactUs = () => {
                     </Div>
                 </Container>
             </Div>
+            <Footer />
         </Layout>
     )
 };
