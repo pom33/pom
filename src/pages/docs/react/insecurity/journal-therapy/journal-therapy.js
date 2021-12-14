@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Div, Text, Container, Button, Textarea } from "atomize";
+import { Div, Text, Container, Button, Textarea, Icon } from "atomize";
 import Header from "../../../../../components/common/header";
 import Layout from "../../../../../components/layout";
+import TipsModal from "../../../../../components/common/TipsModal";
 
 import intro1 from "../../../../../images/insecurity/journal-therapy.jpg";
 
@@ -23,6 +24,7 @@ const list = [
 const JournalTherapy = () => {
     const storedText = localStorage.getItem("text");
     const [text, setText] = useState(storedText || "");
+    const [showModal, setShowModal] = useState(false);
 
     const storeText = () => {
         console.log("Saved", text);
@@ -35,10 +37,24 @@ const JournalTherapy = () => {
 
             <Div tag="section" id="features" p={{ t: "6rem" }}>
                 <Container d="flex" align="center">
-                    <Div p={{ b: "2rem" }} align="center">
+                    <Div p={{ b: "2rem", l: "2.5rem" }} align="center">
                         <Text textSize="title" textWeight="500" m={{ b: "1rem" }}>
                             {item.heading}
                         </Text>
+                        <Icon
+                            name="Question"
+                            pos="absolute"
+                            top="6.55rem"
+                            right="63rem"
+                            d="flex"
+                            size="20px"
+                            onClick={() => setShowModal(true)}
+                            cursor="pointer"
+                        />
+                        <TipsModal
+                            isOpen={showModal}
+                            onClose={() => setShowModal(false)}
+                        />
                         <Text textSize="subheader" textColor="medium" textWeight="500">
                             {item.subheading}
                         </Text>
@@ -49,7 +65,7 @@ const JournalTherapy = () => {
                             d="flex"
                             flexGrow={{ xs: "1", sm: "4", md: "2", lg: "3", xl: "2" }}
                             h={{ xs: "auto", md: "45vh" }}
-                            w={{ xs: "auto", md: "180vh" }}
+                            w={{ xs: "auto", md: "75vw" }}
                             m={{ t: "2rem" }}
                             value={text}
                             onChange={event => setText(event.target.value)}
@@ -71,7 +87,7 @@ const JournalTherapy = () => {
                         >
                             Save
                         </Button>
-                        <Text
+                        {/* <Text
                             textSize="subheader"
                             textColor="medium"
                             textWeight="500"
@@ -96,7 +112,7 @@ const JournalTherapy = () => {
                                     </li>
                                 )
                             })}
-                        </ul>
+                        </ul> */}
                     </Div>
                 </Container>
             </Div>
