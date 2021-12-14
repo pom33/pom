@@ -8,6 +8,13 @@ import intro1 from "../../../../images/depression/dep1.jpg"
 import intro2 from "../../../../images/depression/dep2.jpg"
 import intro3 from "../../../../images/depression/dep4.jpg"
 
+const item = {
+  // icon: intro1,
+  heading: "Depression",
+  //subheading: "Ways to deal with Insecurity",
+};
+
+
 const list = [
   {
     icon: intro1,
@@ -37,9 +44,17 @@ const Depression = () => (
         <Container d="flex" align="center">
           <Div
             p={{ b: "6rem" }}
-            d="flex"
+            // d="flex"
             align="center"
           >
+            <Div m={{ b: "3rem"}}>
+                                <Text textSize="title" textWeight="500" m={{ b: "1rem" }}>
+                                    {item.heading}
+                                </Text>
+                                {/* <Text textSize="subheader" textColor="medium" textWeight="500">
+                                    {item.subheading}
+                                </Text> */}
+                            </Div>
             <Row>
               {list.map(item => (
                 <Col size={{ xs: 12, sm: 6, lg: 4 }}>

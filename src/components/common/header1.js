@@ -141,11 +141,11 @@ class Header extends React.Component {
                 
                 Contact Us
               </a> */}
-              <Div cursor="pointer" className="try-hover">
-            <Link to="../../../../../../docs/react/contactus" className="btn-access">
+              {/* <Div cursor="pointer" className="try-hover">
+            <Link to="../docs/react/contactus" className="btn-access">
               Contact Us
               </Link>
-            </Div>
+            </Div> */}
             </Div>
           </Container>
         </Div>
