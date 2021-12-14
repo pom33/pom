@@ -169,21 +169,21 @@ such as distant sounds, or the texture of an ordinary object.
 
                         <Div d="flex" p="1rem"  m={{ l: "auto", r:"auto" }}>
                         {active > 0 ? 
-                        <Button className="btn-access" onClick={() => onBack()} suffix={
-                        <Icon
-                        name="LongLeft"
-                        size="16px"
-                        color="white"
-                        m={{ l: "1rem" }}
-                        />
-                    }
-                    shadow="3"
-                    hoverShadow="4"
-                    m={{ r: "1rem" }}
-                    align="left"
-                    >
-                        Back
-                    </Button> : null}
+                        <Button onClick={() => onBack()} prefix={
+                          <Icon
+                          name="LongLeft"
+                          size="16px"
+                          color="white"
+                          m={{ r: "1rem" }}
+                          />
+                      }
+                      shadow="3"
+                      hoverShadow="4"
+                      m={{ r: "1rem" }}
+                      align="left"
+                      >
+                          Back
+                      </Button> : null}
                         <Button className="btn-access" onClick={(e) => onNext(e)} suffix={
                         <Icon
                         name="LongRight"

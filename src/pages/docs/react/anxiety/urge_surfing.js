@@ -130,12 +130,12 @@ const Ground = () => {
                         : null}
                         <Div d="flex" p="1rem"  m={{ l: "auto", r:"auto" }}>
                         {active > 0 ? 
-                        <Button className="btn-access" onClick={() => onBack()} suffix={
+                        <Button onClick={() => onBack()} prefix={
                         <Icon
                         name="LongLeft"
                         size="16px"
                         color="white"
-                        m={{ l: "1rem" }}
+                        m={{ r: "1rem" }}
                         />
                     }
                     shadow="3"
